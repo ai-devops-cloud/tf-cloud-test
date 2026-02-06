@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-west-2"
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "my-terraform-cloud-example-bucket"
+resource "aws_s3_bucket_acl" "example" {
+  bucket = "sa-135868-bucket1"
   acl    = "private"
 }
